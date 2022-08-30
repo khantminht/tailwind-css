@@ -1,0 +1,72 @@
+to download ==> https://tailwindcss.com
+
+
+Integrate Methods
+
+1. Using CDN Links      (Content Deliver Network);
+2. Using Tailwind CLI   (use with Node.js);
+3. Using PostCSS        (use with Node.js);
+
+Check node version using terminal:  node -version
+
+1.Using CDN Links   ==>  <script src="https://cdn.tailwindcss.com"></script>
+
+2.Using PostCSS
+
+==> open folder "usingpostcss";
+==> open termial (vscode's termial);
+
+in termianl ==> npm install -D tailwindcss postcss autoprefixer
+
+create tailwind.config ==> npx tailwindcss init
+
+==> Add Post css file
+
+==> go to tailwind.config.js
+
+==> and write down in content: ["./public/**/*.html"],
+	. 	means current folder;
+	** 	means all folder of inside in public folder;
+	*.html means all html files inside of folder;
+
+==> create tailwind main file
+	create new folder and naming 'tailwind'
+	create new file and naiming "main.css" in 'tailwind' folder
+
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+==> build process	(when procress is run, package.json works);
+	
+==> if you don't find scripts in package.json ==> npm init -y; <terminal>
+
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tailwind -i ./tailwind/main.css -o ./public/tailwind.css"
+	},
+
+==> go terminal and enter 	npm run build
+
+	-i = install;
+	-o = open;
+
+
+
+
+
+fontsize
+
+==>	text-xs ~ 12px
+==>	text-sm ~ 14px
+==>	text-base (instead of md - default size) ~ 16px
+==>	text-lg
+==>	text-xl
+
+==>	text-3xl
+==>	text-4xl
+==>	text-5xl
+==>	text-6xl
+==>	text-7xl
+==>	text-8xl
+==>	text-9xl
