@@ -51,6 +51,14 @@ create tailwind.config ==> npx tailwindcss init
 	-i = install;
 	-o = open;
 
+==> watch
+
+	go to package.json , write down in script
+	
+	"scripts": {
+		"watch": "tailwind -i ./tailwind/main.css -o ./public/tailwind.css --watch"
+	},
+
 
 
 
