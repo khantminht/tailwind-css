@@ -735,12 +735,86 @@ video {
           text-decoration-line: none;
 }
 
+.decoration-solid {
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+.decoration-double {
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+}
+
+.decoration-dotted {
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+.decoration-dashed {
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+
+.decoration-wavy {
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
+.decoration-0 {
+  text-decoration-thickness: 0px;
+}
+
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px;
+}
+
+.decoration-8 {
+  text-decoration-thickness: 8px;
+}
+
+.underline-offset-1 {
+  text-underline-offset: 1px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px;
+}
+
+.underline-offset-0 {
+  text-underline-offset: 0px;
+}
+
+.underline-offset-auto {
+  text-underline-offset: auto;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
 
 .hover\:tracking-widest:hover {
   letter-spacing: 0.1em;
+}
+
+.hover\:decoration-wavy:hover {
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
 }
 
 @media (min-width: 768px) {
@@ -750,5 +824,10 @@ video {
 
   .md\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .md\:decoration-wavy {
+    -webkit-text-decoration-style: wavy;
+            text-decoration-style: wavy;
   }
 }
