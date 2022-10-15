@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transition Duration </title>
+    <link href="./tailwind.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+       .box{
+            width: 700px;
+            height: 100%;
+            background-color: steelblue;
+       }
+
+       img:hover{
+            transform: translate(700px);
+       }
+    </style>
+</head>
+
+<body>
+    <h1>This is tailwind CSS</h1>
+    
+    <div class="box">
+        <img src="./img/cat.jpg" class="transition duration-1000 ease-linear delay-1000" alt="cat" />
+
+        <img src="./img/cat.jpg" class="transition duration-1000 ease-in delay-700" alt="cat" />
+
+        <img src="./img/cat.jpg" class="transition duration-1000 ease-out" alt="cat" />
+
+        <img src="./img/cat.jpg" class="transition duration-1000 ease-in-out" alt="cat" />
+    </div>
+  
+    <hr/>
+
+</body>
+</html>
+
+<!--
+    transition-75          transition-duration:75ms;    min-value in tailwind
+    transition-100         transition-duration:100ms
+    transition-300         transition-duration:300ms;
+    transition-500         transition-duration:500ms;
+    transition-700         transition-duration:700ms;
+    transition-1000        transition-duration:1000ms;  max-value in tailwind
+-->
+    
+<!-- 
+    delay-75          transition-delay:75ms;   
+    delay-100         transition-delay:100ms
+    delay-300         transition-delay:300ms;
+    delay-500         transition-delay:500ms;
+    delay-700         transition-delay:700ms;
+    delay-1000        transition-delay:1000ms;  m
+-->
+
+<!-- 
+    ease-linear        transition-timing-function:linear;
+    ease-in            transition-timing-function:ease-in;
+    ease-out           transition-timing-function:ease-out;
+    ease-in-out        transition-timing-function:ease-in-out;
+-->
