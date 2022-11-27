@@ -1790,12 +1790,12 @@ video {
   cursor: all-scroll;
 }
 
-.cursor-row-resize {
-  cursor: row-resize;
-}
-
 .cursor-col-resize {
   cursor: col-resize;
+}
+
+.cursor-row-resize {
+  cursor: row-resize;
 }
 
 .cursor-n-resize {
@@ -2934,6 +2934,18 @@ video {
 
 .underline-offset-auto {
   text-underline-offset: auto;
+}
+
+.accent-zinc-500 {
+  accent-color: #71717a;
+}
+
+.accent-rose-500 {
+  accent-color: #f43f5e;
+}
+
+.accent-teal-500 {
+  accent-color: #14b8a6;
 }
 
 .opacity-0 {
